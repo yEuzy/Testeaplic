@@ -6,12 +6,52 @@
     <title>App</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>Nome</td>
-            <td>Idade</td>
-            <td>Email</td>
-        </tr>
-    </table>
+    <header>
+
+    </header>
+    <div id="container">
+        <table>
+            <tr class="inputs">
+                <td>
+                    <label for="meuid">Meu ID</label>
+                </td>
+                <td>
+                    <input type="text" id="meuid">
+                </td>
+            </tr>
+            <tr class="inputs">
+                <td>
+                    <label for="idusuario">ID do Usuario</label>
+                </td>
+                <td>
+                    <input type="text" id="idusuario">
+                </td>
+            </tr>
+            <tr class="inputs">
+                <td>
+                    <label for="mensagem">Mensagem</label>
+                </td>
+                <td>
+                    <textarea id="mensagem"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="criarMensagem()">Enviar</button>
+                </td>
+                <td><button onclick="recarregar()">Recarregar</button>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <h1>Mensagens para mim</h1>
+        <table id="mensagens">
+            <tr>
+                <td>Remetente |</td>
+                <td>| Mensagem</td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
