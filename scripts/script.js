@@ -15,16 +15,18 @@ function criarMensagem() {
         pessoas.push({
             'idusuario': idusuario,
             'mensagem': [{
-                'mensagens': mensagem
-            }],
-            'remetente': meuid
+                'mensagens': mensagem,
+                'remetente': meuid
+            }]
+            
         })
     }else{
     pessoas.forEach(pessoa =>{
         console.log("ta funcinando")
             if (pessoa.idusuario == idusuario){
                 pessoa.mensagem.push({
-                    'mensagem': mensagem
+                    'mensagem': mensagem,
+                    'remetente': meuid
                 })
 
                 // tentativa nova
@@ -34,9 +36,9 @@ function criarMensagem() {
                     pessoas.push({
                         'idusuario': idusuario,
                         'mensagem': [{
-                            'mensagens': mensagem
-                        }],
-                        'remetente': meuid
+                            'mensagens': mensagem,
+                            'remetente': meuid
+                        }]
                     })
                 }
 
